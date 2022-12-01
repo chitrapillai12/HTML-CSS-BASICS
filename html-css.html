@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML UI document
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h3 {
+            color: #AA336A;
+            font-size: 60px;
+            border: 2px solid #3b77d1;
+            width: 28%;
+            margin-left: 35%;
+        }
+
+        .span-subheading {
+            color: blue;
+        }
+
+        #content-text {
+            color: red
+        }
+
+        ul {
+            list-style-type: disclosure-closed;
+        }
+
+        ol {
+            list-style-type: lower-greek;
+        }
+
+        table {
+            width: 70%;
+        }
+
+        tr {
+            text-align: center;
+        }
+
+        ::selection {
+            color: yellow;
+            background-color: black;
+        }
+
+        div {
+            margin-top: 10px;
+        }
+
+        progress {
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        canvas {
+            border: 1px solid green;
+        }
+
+        .mainDiv {
+            display: flex;
+        }
+
+        .menu-div {
+            width: 30%;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 45px;
+
+        }
+
+        .logo {
+            background-color: yellow;
+        }
+
+        .home {
+            background-color: aquamarine;
+
+        }
+
+        .contact {
+            background-color: antiquewhite;
+        }
+
+        @media screen and (max-width:700px) {
+            .mainDiv {
+                display: block;
+                text-align: center;
+                margin-left: 43%;
+                width: 100%;
+            }
+
+            .menu-div {
+                width: 100%;
+                margin-right: 0;
+                padding: 10px;
+                border-radius: 45px;
+            }
+        }
+
+        @media screen and (min-width:750px)and (max-width:980px) {
+            .logo {
+                background-color: rgb(0, 13, 255);
+            }
+
+            .home {
+                background-color: rgb(255, 127, 246);
+
+            }
+
+            .contact {
+                background-color: rgb(5, 68, 27);
+            }
+        }
+
+        .truncation {
+            text-overflow: ellipsis;
+            width: 210px;
+            word-break: break-word;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .vertical-scrolling {
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            width: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="truncation">
+        Elizabeth Holmes Is Sentenced to More Than 11 Years for Fraud
+    </div>
+    <div class="vertical-scrolling">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+    </div>
+    <div class="mainDiv">
+        <div class="menu-div logo">LOGO</div>
+        <div class="menu-div home">HOME</div>
+        <div class="menu-div contact">CONTACT</div>
+    </div>
+    <header>
+        <h3>Hacker News</h3>
+    </header>
+    <nav>
+        <a href="https://www.thingiverse.com/thing:4687836" target="_blank">Home</a>
+        <a href="https://www.thingiverse.com/thing:4687836" target="_blank">About us</a>
+    </nav>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ABM0eg_-djs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="700px" height="400px"
+            src="http://oldvcr.blogspot.com/2022/11/meet-your-new-two-factor-authenticator.html"></iframe>
+    </div>
+    <div>
+        <video controls width="400px" height="400px">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        </video>
+    </div>
+    <div>
+        <audio controls>
+            <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3">
+        </audio>
+    </div>
+    <div>
+        <progress max="100" value="25"></progress>
+    </div>
+    <div>
+        <canvas width="400" height="100"></canvas>
+    </div>
+
+    <div>
+        <form>
+            <div>
+                Name: <input required type="text" minlength="4" maxlength="10">
+            </div>
+            <div>
+                Password: <input type="password">
+            </div>
+            <div>
+                ph no: <input type="number">
+            </div>
+            <div>
+                email: <input type="email">
+            </div>
+            <div>
+                dob: <input type="date">
+            </div>
+            <div>
+                dob month: <input type="month">
+            </div>
+            <div>
+                dob datetime- local: <input type="datetime-local">
+            </div>
+            <div>
+                dob time: <input type="time">
+            </div>
+            <div>
+                upload: <input type="file">
+            </div>
+            <div>
+                search: <input type="search">
+            </div>
+            <div>
+                languages known: <br><input type="checkbox">English
+                <br>
+                <input type="checkbox">French
+                <br>
+                <input type="checkbox">German
+            </div>
+            <div>
+                Gender:<br>
+                <input type="radio" value="male" name="gender">Male<br>
+                <input type="radio" value="female" name="gender">Female
+            </div>
+            <div>
+                range: <input type="range" min="0" max="10">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <span class="span-subheading">This is a website for showing the technology related news</span>
+    <span id="content-text">listing of news</span>
+    <p>list of news</p>
+    <div style="color:blueviolet">
+        <ul>
+            <li>
+                <a href="https://www.thingiverse.com/thing:4687836" target="_blank">The leap second’s time is up: world
+                    votes to stop
+                    pausing clocks (nature.com)</a>
+            </li>
+            <li>How does Windows decide whether your computer has limited or full Internet access?</li>
+            <li>Elizabeth Holmes Is Sentenced to More Than 11 Years for Fraud</li>
+        </ul>
+    </div>
+    <div style="color:blueviolet">
+        <ol>
+            <li>
+                <a href="https://www.thingiverse.com/thing:4687836" target="_blank">The leap second’s time is up: world
+                    votes to stop
+                    pausing clocks (nature.com)</a>
+            </li>
+            <li>How does Windows decide whether your computer has limited or full Internet access?</li>
+            <li>Elizabeth Holmes Is Sentenced to More Than 11 Years for Fraud</li>
+        </ol>
+    </div>
+    <a href="https://www.w3schools.com/html/html_lists.asp">w3schoollink</a>
+    <span class="span-subheading">This is a website for showing the technology related news</span>
+    <span>listing of news</span>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>Delhi</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Rose</td>
+                <td>Mumbai</td>
+                <td>India</td>
+            </tr>
+        </table>
+    </div>
+    <img src="C:\Users\pillaim\Pictures\test.jpg" width="300px" height="300px">
+    <img src="https://source.unsplash.com/user/c_v_r/100x200">
+
+
+
+</body>
+
+</html>
